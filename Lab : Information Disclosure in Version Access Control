@@ -1,0 +1,18 @@
+Motive of the lab : In general to disclose confidential information via version control history. In order to solve this type of lab, password for “Administrator” user is to be obtained followed by log in and deleting the required user.
+
+Procedure : 
+
+Browse to /.git after opening the lab to get the lab’s Git version control data.
+Open and download a copy of this directory.
+For Linux : Use the command (Just an example, replace it accordingly) 
+		=> wget -r https://YOUR-LAB-ID.web-security-academy.net/.git/
+
+For Windows : Download a UNIX-like environment (like Cygwin) to use the command
+
+3.Using local Git Installation, check the directory for commit with message “Remove admin password from config”
+
+4. In the changed admin.config file, a commit replaced the admin password with the environment variable ADMIN_PASSWORD can be found.
+
+5. Now, go to the lab and log in using the leaked password.
+
+6. Furthermore, for solving the lab, open the admin interface and delete the required name (for eg. Carlos)
